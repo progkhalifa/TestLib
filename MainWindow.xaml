@@ -1,0 +1,31 @@
+﻿<Window x:Class="LocationSuggestion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocationSuggestion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="822.881">
+    <Grid>
+        <TextBox x:Name="Source" TextChanged="Source_TextChanged" HorizontalAlignment="Left" TextAlignment="Right" Height="23" 
+                 Margin="35,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="536"/>
+
+        <Button x:Name="SearchBtn" Content="Search Now" HorizontalAlignment="Left" Margin="576,37,0,0" VerticalAlignment="Top" 
+                Width="206" Height="23" Click="SearchBtn_Click"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="35,77,244,27" BorderThickness="2" BorderBrush="Azure">
+            <TextBlock x:Name="Results" HorizontalAlignment="Left"  TextWrapping="Wrap" 
+                   ScrollViewer.VerticalScrollBarVisibility="Visible" Height="Auto" 
+                   Text="" VerticalAlignment="Top" Width="536" IsEnabled="True"/>
+
+        </ScrollViewer>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="576,77,33,27" BorderThickness="2" BorderBrush="Azure">
+            <TextBlock x:Name="Propability" HorizontalAlignment="Left"  TextWrapping="Wrap" 
+                ScrollViewer.VerticalScrollBarVisibility="Visible" Height="Auto"
+                Text="" VerticalAlignment="Top" Width="206" IsEnabled="True"/>
+
+            </ScrollViewer>
+
+
+    </Grid>
+</Window>

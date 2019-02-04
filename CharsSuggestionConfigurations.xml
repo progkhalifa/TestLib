@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CharsSuggestion>
+
+  <LocatorService>
+    <LocatorTaskURL>http://rsweb.eastus.cloudapp.azure.com/arcgis/rest/services/Egypt_Gaz_suggestions/GeocodeServer</LocatorTaskURL>
+    <LocatorTaskSearchField>Address</LocatorTaskSearchField>
+  </LocatorService>
+  
+	<ResultsSettings>
+		<!-- <ResultsFilterType> can be  MaxResults, AccuracyPercentage -->
+		<ResultsFilterType>AccuracyPercentage</ResultsFilterType>
+		<MaxResults>50</MaxResults>
+		<AccuracyPercentage>80</AccuracyPercentage>
+	</ResultsSettings>
+	
+	<Chars>
+	  
+		<Char>
+			<CharList>ا,أ,إ,آ</CharList>
+			<Position>start</Position>
+		</Char>
+
+		<Char>
+			<CharList>ي,ى,ئ</CharList>
+			<Position>end</Position>
+		</Char>
+
+		<Char>
+			<CharList>و,ؤ</CharList>
+			<Position>middle</Position>
+		</Char>
+
+		<Char>
+			<CharList>ه,ة</CharList>
+			<Position>end</Position> 
+		</Char>
+
+	</Chars>
+
+</CharsSuggestion>
